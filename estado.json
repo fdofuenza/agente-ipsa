@@ -1,0 +1,16 @@
+{
+  "capital_total": 1898524,
+  "efectivo": 1898524,
+  "posiciones": {
+    "CAP.SN": {
+      "unidades": 285,
+      "precio_compra": 11216.32,
+      "stop": 6000,
+      "objetivo": 7200,
+      "nota": "Vender antes de redistribuir"
+    }
+  },
+  "vendiendo_cap": true,
+  "max_posiciones": 4,
+  "reserva_pct": 0.10
+}
