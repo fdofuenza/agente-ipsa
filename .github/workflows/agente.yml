@@ -1,0 +1,37 @@
+name: Agente IPSA
+
+on:
+  schedule:
+    - cron: '*/15 12-21 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests pytz feedparser pandas
+
+      - name: Ejecutar agente
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python main.py
+
+      - name: Guardar estado
+        run: |
+          git config user.name "Agente IPSA"
+          git config user.email "agente@ipsa.bot"
+          git add -f estado.json senales_previas.json ultimo_update.json historial_senales.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "Estado [skip ci]"
+          git push
