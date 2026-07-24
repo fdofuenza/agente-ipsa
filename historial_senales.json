@@ -1,3 +1,14 @@
 {
-  "senales": []
+  "senales": [
+    {
+      "fecha": "2026-07-24",
+      "ticker": "CAP.SN",
+      "nombre": "CAP",
+      "tipo": "VENTA",
+      "precio": 6000.0,
+      "score": 70,
+      "verificada": false,
+      "resultado": null
+    }
+  ]
 }
