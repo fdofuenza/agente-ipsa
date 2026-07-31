@@ -7,8 +7,12 @@
       "tipo": "VENTA",
       "precio": 6000.0,
       "score": 70,
-      "verificada": false,
-      "resultado": null
+      "verificada": true,
+      "resultado": {
+        "precio_final": 5975.0,
+        "variacion": -0.42,
+        "acerto": false
+      }
     }
   ]
 }
