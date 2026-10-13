@@ -47,6 +47,16 @@
       "score": 65,
       "verificada": false,
       "resultado": null
+    },
+    {
+      "fecha": "2026-10-13",
+      "ticker": "CAP.SN",
+      "nombre": "CAP",
+      "tipo": "VENTA",
+      "precio": 4890.5,
+      "score": 81,
+      "verificada": false,
+      "resultado": null
     }
   ]
 }
