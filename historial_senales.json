@@ -49,8 +49,12 @@
       "tipo": "VENTA",
       "precio": 5001.10009765625,
       "score": 65,
-      "verificada": false,
-      "resultado": null
+      "verificada": true,
+      "resultado": {
+        "precio_final": 4645.5,
+        "variacion": -7.11,
+        "acerto": true
+      }
     },
     {
       "fecha": "2026-10-13",
