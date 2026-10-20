@@ -63,6 +63,20 @@
       "tipo": "VENTA",
       "precio": 4890.5,
       "score": 81,
+      "verificada": true,
+      "resultado": {
+        "precio_final": 4642.0,
+        "variacion": -5.08,
+        "acerto": true
+      }
+    },
+    {
+      "fecha": "2026-10-20",
+      "ticker": "CAP.SN",
+      "nombre": "CAP",
+      "tipo": "VENTA",
+      "precio": 4642.0,
+      "score": 54,
       "verificada": false,
       "resultado": null
     }
