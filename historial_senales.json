@@ -105,8 +105,12 @@
       "tipo": "VENTA",
       "precio": 4217.0,
       "score": 65,
-      "verificada": false,
-      "resultado": null
+      "verificada": true,
+      "resultado": {
+        "precio_final": 3850.0,
+        "variacion": -8.7,
+        "acerto": true
+      }
     }
   ]
 }
