@@ -111,6 +111,16 @@
         "variacion": -8.7,
         "acerto": true
       }
+    },
+    {
+      "fecha": "2026-11-13",
+      "ticker": "CAP.SN",
+      "nombre": "CAP",
+      "tipo": "VENTA",
+      "precio": 3634.60009765625,
+      "score": 70,
+      "verificada": false,
+      "resultado": null
     }
   ]
 }
